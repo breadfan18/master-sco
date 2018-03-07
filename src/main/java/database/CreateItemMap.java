@@ -10,11 +10,9 @@ public class CreateItemMap {
 
     public void dbConnection() throws ClassNotFoundException, SQLException {
         //String myDriver = "com.mysql.jdbc.Driver";
-
-        //?autoReconnect=true&useSSL=false
         //Class.forName(myDriver);
 
-        String myUrl = "jdbc:mysql://localhost:3306/itemdb";
+        String myUrl = "jdbc:mysql://localhost:3306/itemdb?autoReconnect=true&useSSL=false";
         conn =  DriverManager.getConnection(myUrl, "suprety", "Ktmsatch33");
     }
 

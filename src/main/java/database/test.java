@@ -1,5 +1,7 @@
 package database;
 
+import utils.BasePage;
+
 import java.sql.SQLException;
 import java.util.Map;
 
@@ -8,14 +10,21 @@ public class test {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         CreateItemMap im = new CreateItemMap();
-
+        BasePage bp = new BasePage();
+        ItemProcessor ip = new ItemProcessor();
         im.dbConnection();
+       // String format = "%-15s%-12s%-12s%-12s%-12s%-12s%-12s%-12s";
 
-        String format = "%-15s%-12s%-12s%-12s%-12s%-12s%-12s%-12s";
-        for (Integer key: im.dbItemsMap().keySet()) {
-            Object[] value = im.dbItemsMap().get(key);
-            System.out.format(format, value[0], value[1], value[2], value[3], value[4], value[5], value[6], value[7]);
-            System.out.println();
+        String scanedItem = bp.getStringFromScanner("Scan item: ");
+
+
+        if (ip.itemProcessor(im.dbItemsMap(), scanedItem)){
+            System.out.println("Item present");
         }
+        else
+        System.out.println("Item not there!");
+
+
+
     }
 }
