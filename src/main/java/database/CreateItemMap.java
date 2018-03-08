@@ -7,25 +7,20 @@ import java.util.Map;
 public class CreateItemMap {
 
     private static Connection conn = null;
+    public Map<Integer, Object[]> itemMap = new HashMap<Integer, Object[]>();
 
-    public void dbConnection() throws ClassNotFoundException, SQLException {
-        //String myDriver = "com.mysql.jdbc.Driver";
-        //Class.forName(myDriver);
-
+    public void createDbConnection() throws ClassNotFoundException, SQLException {
         String myUrl = "jdbc:mysql://localhost:3306/itemdb?autoReconnect=true&useSSL=false";
         conn =  DriverManager.getConnection(myUrl, "suprety", "Ktmsatch33");
     }
 
-    public Map<Integer, Object[]> dbItemsMap() throws SQLException, ClassNotFoundException {
-        Map<Integer, Object[]> itemMap = new HashMap<Integer, Object[]>();
+    public void addItemsToMap() throws SQLException, ClassNotFoundException {
         String query = "SELECT * FROM item_source";
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery(query);
 
         try
         {
-
-            // iterate through the java resultset
             int keyNum = 0;
             while (rs.next())
             {
@@ -48,6 +43,5 @@ public class CreateItemMap {
             System.err.println("Got an exception!");
             System.err.println(e);
         }
-        return itemMap;
     }
 }

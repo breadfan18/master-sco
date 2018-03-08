@@ -3,7 +3,6 @@ package database;
 import utils.BasePage;
 
 import java.sql.SQLException;
-import java.util.Map;
 
 public class test {
 
@@ -12,13 +11,14 @@ public class test {
         CreateItemMap im = new CreateItemMap();
         BasePage bp = new BasePage();
         ItemProcessor ip = new ItemProcessor();
-        im.dbConnection();
+        im.createDbConnection();
+        im.addItemsToMap();
        // String format = "%-15s%-12s%-12s%-12s%-12s%-12s%-12s%-12s";
 
         String scanedItem = bp.getStringFromScanner("Scan item: ");
 
 
-        if (ip.itemProcessor(im.dbItemsMap(), scanedItem)){
+        if (ip.itemProcessor(im.itemMap, scanedItem)){
             System.out.println("Item present");
         }
         else
