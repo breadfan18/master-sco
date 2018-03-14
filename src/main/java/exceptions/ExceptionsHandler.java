@@ -9,16 +9,23 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
-public class ExceptionsHandler extends CreateItemList {
+public class ExceptionsHandler  {
 
-    public boolean isWeightReqd(Item item){
-        //return sheet.getRow(rowNum).getCell(2).getBooleanCellValue();
-       return item.isWeightReqd();
+    public boolean isWeightReqd(Map<Integer, Item> itemMap, int key){
+        Item weightReqdValue = itemMap.get(key);
+        return weightReqdValue.isWeightReqd();
+
     }
 
-    public boolean isQuantityReqd(XSSFSheet sheet, int rowNum){
-        return sheet.getRow(rowNum).getCell(3).getBooleanCellValue();
+    public boolean isQuantityReqd(List<Item> itemList){
+        for(Item i: itemList){
+            if (i.isWeightReqd()){
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean isRecalled(XSSFSheet sheet, int rowNum){
