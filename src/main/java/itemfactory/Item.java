@@ -12,7 +12,7 @@ public class Item {
 
     public Item(){}
 
-    public Item(String itemName, double unitPrice, boolean weightReqd, boolean quanReqd, boolean recalled,
+    /*public Item(String itemName, double unitPrice, boolean weightReqd, boolean quanReqd, boolean recalled,
                 boolean ageRest, boolean eCpn, double eCpnAmt){
         this.itemName = itemName;
         this.unitPrice = unitPrice;
@@ -22,7 +22,7 @@ public class Item {
         this.ageRest = ageRest;
         this.eCpn = eCpn;
         this.eCpnAmt = eCpnAmt;
-    }
+    }*/
 
     public String getItemName() {
         return itemName;
