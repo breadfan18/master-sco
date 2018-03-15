@@ -72,7 +72,7 @@ public class Item {
         this.ageRest = ageRest;
     }
 
-    public boolean iseCpn() {
+    public boolean haseCpn() {
         return eCpn;
     }
 

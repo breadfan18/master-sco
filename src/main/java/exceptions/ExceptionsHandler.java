@@ -1,43 +1,38 @@
 package exceptions;
 
-import database.CreateItemList;
 import itemfactory.Item;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 public class ExceptionsHandler  {
 
     public boolean isWeightReqd(Map<Integer, Item> itemMap, int key){
-        Item weightReqdValue = itemMap.get(key);
-        return weightReqdValue.isWeightReqd();
-
+        Item thisItem = itemMap.get(key);
+        return thisItem.isWeightReqd();
     }
 
-    public boolean isQuantityReqd(List<Item> itemList){
-        for(Item i: itemList){
-            if (i.isWeightReqd()){
-                return true;
-            }
-        }
-        return false;
+    public boolean isQuantityReqd(Map<Integer, Item> itemMap, int key){
+        Item thisItem = itemMap.get(key);
+        return thisItem.isQuanReqd();
     }
 
-    public boolean isRecalled(XSSFSheet sheet, int rowNum){
-        return sheet.getRow(rowNum).getCell(4).getBooleanCellValue();
+    public boolean isRecalled(Map<Integer, Item> itemMap, int key){
+        Item thisItem = itemMap.get(key);
+        return thisItem.isRecalled();
     }
 
-    public boolean isAgeRestricted(XSSFSheet sheet, int rowNum){
-        return sheet.getRow(rowNum).getCell(5).getBooleanCellValue();
+    public boolean isAgeRestricted(Map<Integer, Item> itemMap, int key){
+        Item thisItem = itemMap.get(key);
+        return thisItem.isAgeRest();
     }
 
-    public boolean hasElecCpn(XSSFSheet sheet, int rowNum){
-        return sheet.getRow(rowNum).getCell(6).getBooleanCellValue();
+    public boolean hasElecCpn(Map<Integer, Item> itemMap, int key){
+        Item thisItem = itemMap.get(key);
+        return thisItem.haseCpn();
     }
 
     public boolean ageValidator(String dob) throws ParseException {

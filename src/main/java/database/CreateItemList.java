@@ -1,18 +1,13 @@
 package database;
 
 import itemfactory.Item;
-
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class CreateItemList {
-
     private static Connection conn = null;
-    public List<Item> itemList = new ArrayList<Item>();
-    public Map<Integer, Item> testMap = new HashMap<Integer, Item>();
+    public Map<Integer, Item> itemMap = new HashMap<Integer, Item>();
 
     public void createDbConnection() {
         String myUrl = "jdbc:mysql://localhost:3306/itemdb?autoReconnect=true&useSSL=false";
@@ -23,7 +18,7 @@ public class CreateItemList {
         }
     }
 
-    public void addItemsToList()  {
+    public void addItemsToItemMap()  {
         int keyNum = 0;
         String query = "SELECT * FROM item_source";
         Statement st = null;
@@ -34,8 +29,6 @@ public class CreateItemList {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         try
         {
             while (rs.next())
@@ -50,8 +43,7 @@ public class CreateItemList {
                 item.seteCpn(rs.getBoolean("Ecpn"));
                 item.seteCpnAmt(rs.getDouble("Ecpn Amt"));
 
-                //itemList.add(item);
-                testMap.put(keyNum++, item);
+                itemMap.put(keyNum++, item);
             }
         }
         catch (Exception e)
