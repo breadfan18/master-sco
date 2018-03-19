@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72d60336-2d68-472e-a3c8-715803b0bf8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/utils/ScratchPaper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/itemfactory/Item.class" afterPath="$PROJECT_DIR$/target/classes/itemfactory/Item.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/orderprocessor/ItemsProcessor.class" afterPath="$PROJECT_DIR$/target/classes/orderprocessor/ItemsProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/orderprocessor/OrderProcessor.class" afterPath="$PROJECT_DIR$/target/classes/orderprocessor/OrderProcessor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receipt.txt" afterPath="$PROJECT_DIR$/Receipt.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/itemfactory/Item.java" afterPath="$PROJECT_DIR$/src/main/java/itemfactory/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="CreateItemList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/database/CreateItemList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
+            <state relative-caret-position="153">
               <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#236#251#0" expanded="true" />
@@ -60,21 +61,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-              <folding />
+              <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+              <folding>
+                <element signature="e#316#335#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_source" pinned="false" current-in-tab="true">
-        <entry file="das://table:/d34f99f6/18607501-51ae-4cf6-8804-4d08d13326fa/itemdb.item_source">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="ItemsProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="108" column="97" lean-forward="false" selection-start-line="108" selection-start-column="97" selection-end-line="108" selection-end-column="97" />
+              <folding>
+                <element signature="method#eCpnAmt#0;class#ItemsProcessor#0" expanded="false" />
+                <element signature="method#eCpnProcessor#0;class#ItemsProcessor#0" expanded="false" />
+                <element signature="method#hasPaperCpns#0;class#ItemsProcessor#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,13 +131,13 @@
         <option value="$PROJECT_DIR$/src/main/java/orderprocessor/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/ItemProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/ExceptionsHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/receipts/ReceiptHeaderFooter.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/CreateItemList.java" />
         <option value="$PROJECT_DIR$/src/main/java/orderprocessor/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ScratchPaper.java" />
         <option value="$PROJECT_DIR$/src/main/java/itemfactory/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java" />
       </list>
     </option>
   </component>
@@ -142,12 +150,12 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -227,7 +235,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../selfcheck" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chectest" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -381,10 +389,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43792000" />
+    <option name="totallyTimeSpent" value="47134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1296" height="1040" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -394,8 +403,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30056497" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66892654" sideWeight="0.4935275" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2858757" sideWeight="0.49514562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2757062" sideWeight="0.4935275" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3740113" sideWeight="0.49514562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -544,7 +553,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#316#335#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,14 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Receipt.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -886,24 +889,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="method#quantityReqdProcessor#0;class#ItemsProcessor#0" expanded="false" />
-            <element signature="method#ageRestrProcessor#0;class#ItemsProcessor#0" expanded="false" />
-            <element signature="method#normalItemProcessor#0;class#ItemsProcessor#0" expanded="false" />
-            <element signature="method#eCpnAmt#0;class#ItemsProcessor#0" expanded="false" />
-            <element signature="method#eCpnProcessor#0;class#ItemsProcessor#0" expanded="false" />
-            <element signature="method#hasPaperCpns#0;class#ItemsProcessor#0" expanded="false" />
-          </folding>
+    <entry file="das://table:/d34f99f6/18607501-51ae-4cf6-8804-4d08d13326fa/itemdb.item_source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/database/CreateItemList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
+        <state relative-caret-position="153">
           <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="e#236#251#0" expanded="true" />
@@ -913,18 +908,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java">
+    <entry file="file://$PROJECT_DIR$/Receipt.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d34f99f6/18607501-51ae-4cf6-8804-4d08d13326fa/itemdb.item_source">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/ItemsProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="108" column="97" lean-forward="false" selection-start-line="108" selection-start-column="97" selection-end-line="108" selection-end-column="97" />
+          <folding>
+            <element signature="method#eCpnAmt#0;class#ItemsProcessor#0" expanded="false" />
+            <element signature="method#eCpnProcessor#0;class#ItemsProcessor#0" expanded="false" />
+            <element signature="method#hasPaperCpns#0;class#ItemsProcessor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/orderprocessor/OrderProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+          <folding>
+            <element signature="e#316#335#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -35,19 +35,19 @@ public class OrderProcessor extends OrderData {
                 Item i = itemMap.get(itemKey);
 
                 if (xcep.isWeightReqd(itemMap, itemKey)){
-                    ip.wghtReqdProcessor(i, itemKey, orderMapKeyNum++, i.getItemName(), i.getUnitPrice(), itemMap, orderMap);
+                    ip.wghtReqdProcessor(i, itemKey, orderMapKeyNum++, itemMap, orderMap);
                 }
                 else if (xcep.isQuantityReqd(itemMap, itemKey)){
-                    ip.quantityReqdProcessor(i, itemKey, orderMapKeyNum++, i.getItemName(), i.getUnitPrice(), itemMap, orderMap);
+                    ip.quantityReqdProcessor(i, itemKey, orderMapKeyNum++, itemMap, orderMap);
                 }
                 else if (xcep.isRecalled(itemMap, itemKey)){
                     System.out.println(RECALL_TEXT);
                 }
                 else if (xcep.isAgeRestricted(itemMap, itemKey) && ageNotValidated){
-                    ageNotValidated = ip.ageRestrProcessor(i, itemKey, orderMapKeyNum++, i.getItemName(), i.getUnitPrice(), itemUnit, itemMap, orderMap);
+                    ageNotValidated = ip.ageRestrProcessor(i, itemKey, orderMapKeyNum++, itemUnit, itemMap, orderMap);
                 }
                 else {
-                    ip.normalItemProcessor(i, itemKey, orderMapKeyNum++, i.getItemName(), i.getUnitPrice(), itemUnit, itemMap, orderMap);
+                    ip.normalItemProcessor(i, itemKey, orderMapKeyNum++, itemUnit, itemMap, orderMap);
                 }
             }
             else if (!itemScanned.equalsIgnoreCase("1")){
