@@ -10,6 +10,7 @@ import java.util.Map;
 
 public class ExceptionsHandler  {
 
+    // these methods handles all the exceptions for exception items as shopper scans them
     public boolean isWeightReqd(Map<Integer, Item> itemMap, int key){
         Item thisItem = itemMap.get(key);
         return thisItem.isWeightReqd();
