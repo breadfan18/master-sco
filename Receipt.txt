@@ -3,18 +3,19 @@
                        Kroger                        
                    3760 Paxton Ave                   
                 Cincinnati, OH 45209                 
-            Thu Mar 15 10:57:37 EDT 2018             
+            Tue Mar 12 21:02:54 EDT 2019             
 =====================================================
 Item Name      Price/Unit  Unit      Coupon    Total     
-Apples         0.65        4         N/A       $2.60     
-Banana         0.99        6.77lb    ($0.55)   $6.15     
-Cheetos        2.75        N/A       ($0.99)   $1.76     
-Cilantro       0.5         7         N/A       $3.50     
+Banana         0.99        5.44lb    ($0.55)   $4.84     
+Apples         0.65        16        N/A       $10.40    
+Beer           7.95        N/A       N/A       $7.95     
+Whiskey        14.95       N/A       N/A       $14.95    
+Marlboro       6.79        N/A       N/A       $6.79     
 =====================================================
-                                     Subtotal: $14.01
-                                     Tax:      $0.98
+                                     Subtotal: $44.93
+                                     Tax:      $3.15
 -----------------------------------------------------
-                                     Balance:  $14.99
+                                     Balance:  $48.08
 =====================================================
                     Thank you for                    
                   shopping with us                   

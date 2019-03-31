@@ -1,16 +1,16 @@
 package utils;
 
+import java.util.Calendar;
+
 public class ScratchPaper {
 
     public static void main(String[] args) {
-        BasePage bp = new BasePage();
-
-        String a = "hello";
-
-        System.out.println(bp.rightAlignString(50, a));
-
-
+        String test = "Swaroop";
+        System.out.printf("Name lenght is: %d", test.length());
     }
+
+
+
 }
 
 

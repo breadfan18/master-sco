@@ -145,14 +145,9 @@ public class BasePage {
 
     public String centerAlignString (int width, String stringToAlign){
         return StringUtils.center(stringToAlign, width);
-
     }
 
     public String rightAlignString (int width, String stringToAlign){
         return StringUtils.right(stringToAlign, width);
-
     }
-
-
-
 }
