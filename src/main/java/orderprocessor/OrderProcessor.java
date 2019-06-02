@@ -57,7 +57,7 @@ public class OrderProcessor extends OrderData {
         while (!itemScanned.equalsIgnoreCase("1"));
     }
 
-    public boolean itemValidator(Map<Integer, Item> itemMap, String scannedItem){
+    private boolean itemValidator(Map<Integer, Item> itemMap, String scannedItem){
         for (Integer key: itemMap.keySet()) {
             Item i = itemMap.get(key);
             if (i.getItemName().equalsIgnoreCase(scannedItem)){
@@ -67,7 +67,7 @@ public class OrderProcessor extends OrderData {
         return false;
     }
 
-    public int getItemKey(Map<Integer, Item> itemMap, String scannedItem){
+    private int getItemKey(Map<Integer, Item> itemMap, String scannedItem){
         for (Integer key: itemMap.keySet()) {
             Item i = itemMap.get(key);
             if (i.getItemName().equalsIgnoreCase(scannedItem)){
