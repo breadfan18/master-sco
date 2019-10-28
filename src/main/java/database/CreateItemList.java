@@ -12,7 +12,7 @@ public class CreateItemList {
     public void createDbConnection() {
         String myUrl = "jdbc:mysql://localhost:3306/itemdb?autoReconnect=true&useSSL=false";
         try {
-            conn =  DriverManager.getConnection(myUrl, "suprety", "Ktmsatch33");
+            conn =  DriverManager.getConnection(myUrl, "*******", "**********");
         } catch (SQLException e) {
             e.printStackTrace();
         }
